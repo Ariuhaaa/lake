@@ -1,0 +1,143 @@
+/* Web Fonts ----------------------- */
+
+
+/* Base Styles --------------------- */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 1.25em; /* 20px on most screens */
+}
+img {
+  width: 100%; /* responsive images */
+}
+
+
+/* Main Styles --------------------- */
+
+
+/* Media Queries ------------------- */
+
+#top {
+  background: url("../img/mountains.jpg"), #d2691e;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 350px;
+}
+body {
+  margin: 0px;
+  font-family: "work sans";
+}
+header h1 {
+  text-align: center;
+  color: white;
+  font-family: "changefont";
+  letter-spacing: 5px;
+  line-height: 30px;
+  font-size: 100px;
+  margin-top: 120px;
+}
+.title {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+}
+.intro {
+  text-align: center;
+  margin: 0 auto;
+  width: 35%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.callout {
+  display: block;
+  margin: auto;
+  width: 150px;
+  background: linear-gradient(rgb(243, 237, 226), rgb(255, 157, 0));
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  box-shadow:  #000000;
+  text-align: center;
+}
+#wildlife {
+  background: url("../img/bear.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 10px orange;
+  box-shadow: inset -10px -10px 10px black, inset 10px 10px 10px black;
+  border-radius: 10px 10px 0 0;
+  height: 600px;
+  margin: 100px auto;
+  color: white;
+  padding-left: 50px;
+  padding-top: 15%;
+  margin-bottom: 20px;
+}
+a {
+  color: orange;
+  text-decoration: none;
+}
+.column {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  position: relative;
+}
+.column:first-child {
+  margin-right: 6%;
+}
+.column img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+li {
+  text-decoration: none;
+}
+.main-footer {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@font-face {
+  font-family: "changefont";
+  src: url("../fonts/abolition-regular-webfont.woff") format("woff");
+}
+h1::after {
+  content: "\2193";
+  display: block;
+  color: white;
+  margin-top: 120px;
+  font-size: 80px;
+}
+h2 {
+    font-family: "changefont";
+    src: url("../fonts/abolition-regular-webfont.woff") format("woff"); 
+    letter-spacing: 3px;
+  }
+  section {
+    border-bottom: dashed;
+    padding-bottom: 30px;
+    width: 70%;
+    max-width: 1000px;
+    margin:auto; 
+  }
+  .column:hover::after {
+  content: 'SAVE';
+  position: absolute;
+  top: 8px;
+  left:15px;
+  font-size: 18px;
+  background-color: #d2691e;
+  padding: 10px;
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  }
